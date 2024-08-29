@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #282c34; /* Dark gray background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px; /* Increased padding for more space inside the box */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 600px; /* Increased max-width for a larger box */
+            box-sizing: border-box;
+        }
+        h2 {
+            margin-top: 0;
+            color: #fff;
+        }
+        .form-group {
+            margin-bottom: 20px; /* Increased margin for better spacing */
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 10px; /* Increased margin for better spacing */
+            color: #ddd;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 12px; /* Increased padding for larger input fields */
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #fff;
+            color: #000;
+        }
+        .form-group input[type="submit"] {
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: darkgreen;
+        }
+        .back-link {
+            display: block;
+            margin-top: 30px; /* Increased margin for better spacing */
+            text-align: center;
+            text-decoration: none;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Register</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+        <a href="index.html" class="back-link">Back to Home</a>
+    </div>
+
+</body>
+</html>
